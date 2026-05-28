@@ -1,13 +1,14 @@
-# Riset SD Depok 🏫
+# Riset Sekolah 🏫
 
-Cari, filter, dan bandingkan SD negeri/swasta di Kota Depok. 32+ sekolah dari 9 kecamatan.
+Cari, filter, dan bandingkan sekolah dari berbagai jenjang dan kota di Indonesia.
+
+Mulai dari 32 SD di Depok — siap diperluas ke jenjang lain (SMP, SMA) dan kota lain.
 
 ## 🔗 Tautan
 
-- **Frontend:** https://riset-sd.pages.dev
-- **Domain:** https://riset-sd.arifyahya.web.id
+- **Frontend:** https://riset-sekolah.pages.dev
+- **Repo:** `alfred-vps/riset-sekolah`
 - **Admin:** `/admin` (password-protected)
-- **Repo:** `alfred-vps/sekolah-depok`
 
 ## 🛠 Stack
 
@@ -21,7 +22,7 @@ Cari, filter, dan bandingkan SD negeri/swasta di Kota Depok. 32+ sekolah dari 9 
 ## 📁 Struktur
 
 ```
-.hermes/projects/sekolah-depok/
+.hermes/projects/riset-sekolah/
 ├── AGENTS.md              ← Project definition
 ├── CHANGELOG.md            ← Version history
 ├── .hermes/
@@ -45,14 +46,15 @@ Cari, filter, dan bandingkan SD negeri/swasta di Kota Depok. 32+ sekolah dari 9 
 ## 🚀 Deploy
 
 ```bash
-cd .hermes/projects/sekolah-depok
+cd .hermes/projects/riset-sekolah
 ./deploy.sh
 ```
 
 ## 📊 Versi
 
-| Versi | Stack | Deploy | Status |
-|-------|-------|--------|--------|
-| V1 | Static HTML | GitHub Pages | 📁 `v1-index.html` |
-| V2 | Next.js (static) | Cloudflare Pages | ✅ Migrated |
-| V3 | Next.js + Supabase | Cloudflare Pages | ✅ Live |
+| Versi | Stack | Deploy | Scope |
+|-------|-------|--------|-------|
+| V1 | Static HTML | GitHub Pages | SD Depok |
+| V2 | Next.js (static) | Cloudflare Pages | SD Depok |
+| V3 | Next.js + Supabase | Cloudflare Pages | SD Depok |
+| V3.1 | Next.js + Supabase | Cloudflare Pages | **Multi-jenjang & multi-kota** 🔜 |

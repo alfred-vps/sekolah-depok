@@ -1,22 +1,21 @@
-# Continuity — Riset SD Depok (sekolah-depok)
+# Continuity — Riset Sekolah (riset-sekolah)
 
 ## Last Session: 2026-05-28
 
 ### Completed
-- Supabase table `schools` created + seeded (32 records)
-- Admin CRUD page at `/admin` (password: PASS_APPS_RISETSD)
-- Cloudflare Pages Functions: `/api/admin/schools` (GET/POST/PUT/DELETE)
-- RLS enabled + anon read policy
-- Deploy script `deploy.sh` (build → copy functions → wrangler deploy)
-- GitHub repo `sekolah-depok` sync (V1 → V3 history preserved)
-- Restructured to `.hermes/projects/` convention
+- Proyek rename dari `sekolah-depok` → `riset-sekolah`
+- Scope diperluas: SD Depok → multi-jenjang & multi-kota
+- GitHub repo rename
+- Local directory rename
+- AGENTS.md, README.md, CHANGELOG.md updated
 
 ### Next Steps
-- [ ] Custom domain provisioning (riset-sd.arifyahya.web.id)
-- [ ] Connect Cloudflare Pages → GitHub for auto-deploy
-- [ ] Add bulk import (upload multiple schools from CSV)
+- [ ] Rename Cloudflare Pages project `riset-sd` → `riset-sekolah`
+- [ ] Deploy ulang dengan nama baru
+- [ ] Tambah field `jenjang` (SD/SMP/SMA) dan `kota` ke table schools
+- [ ] Seed data kota lain & jenjang lain
+- [ ] Tambah filter jenjang & kota di frontend
 
 ### Open Questions
-- [ ] Auto-deploy from GitHub? (vs manual `deploy.sh`)
-- [ ] Add school images/photos?
-- [ ] Public API for the school directory?
+- [ ] Kota mana yang mau ditambahin dulu?
+- [ ] Jenjang mana dulu? (SMP, SMA, atau semua sekaligus?)

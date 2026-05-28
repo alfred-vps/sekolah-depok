@@ -1,18 +1,18 @@
-# Riset SD Depok — Cari & Filter Sekolah Dasar di Depok
+# Riset Sekolah — Cari, Filter & Bandingkan Sekolah di Indonesia
 
-**One-liner:** Cari, filter, dan bandingkan SD negeri/swasta di Kota Depok. 32+ sekolah dari 9 kecamatan. Lengkap dengan admin CRUD via Supabase.
+**One-liner:** Cari, filter, dan bandingkan sekolah dari berbagai jenjang (SD, SMP, SMA) dan kota/kabupaten di Indonesia. Admin CRUD via Supabase.
 
 **Tagline:** Temukan sekolah terbaik untuk putra-putri Anda.
 
 ## Target Audience
 
-- **Orang tua** di Depok yang mencari SD untuk anaknya (intake 2028)
-- **Masyarakat** yang ingin membandingkan biaya, akreditasi, kurikulum, dan fasilitas SD
+- **Orang tua** yang mencari sekolah untuk anaknya
+- **Masyarakat** yang ingin membandingkan biaya, akreditasi, kurikulum, dan fasilitas sekolah
 
 ## Brand Identity
 
-- **Nama:** Riset SD Depok
-- **Domain:** riset-sd.pages.dev / riset-sd.arifyahya.web.id
+- **Nama:** Riset Sekolah
+- **Domain:** riset-sekolah.pages.dev
 - **Warna:** Blue-600 (#2563EB) primary, gray background
 - **Font:** Sistem font stack
 
@@ -26,7 +26,7 @@
 ```
 
 - **Frontend:** Next.js 14.2 (App Router, TypeScript, Tailwind CSS) — static export
-- **Data:** Supabase table `schools` (32 records, RLS enabled)
+- **Data:** Supabase table `schools` (multi-jenjang, multi-kota)
 - **API:** Cloudflare Pages Functions — CRUD proxy ke Supabase
 - **Auth:** Password-based admin (`X-Admin-Key` header)
 - **Build:** Static export — data di-fetch build-time dari Supabase
@@ -34,17 +34,22 @@
 
 ## Features
 
-1. **Filter multidimensi:** jenis, kurikulum, biaya, lokasi, akreditasi, fasilitas, program
-2. **Search:** cari nama/deskripsi/lokasi
-3. **Admin CRUD:** `/admin` — tambah, edit, hapus sekolah (password-protected)
-4. **32 SD:** 9 negeri + 23 swasta, tersebar di 9 kecamatan
+1. **Multi-jenjang:** SD, SMP, SMA — filter berdasarkan jenjang pendidikan
+2. **Multi-kota:** Daftar sekolah dari berbagai kota/kabupaten
+3. **Filter multidimensi:** jenis, kurikulum, biaya, lokasi, akreditasi, fasilitas, program
+4. **Search:** cari nama/deskripsi/lokasi
+5. **Admin CRUD:** `/admin` — tambah, edit, hapus sekolah (password-protected)
+
+## Data Saat Ini
+
+- **32 SD** di **Kota Depok** (9 kecamatan) — data awal, siap diperluas
 
 ## Key Decisions
 
 - **Static export** — performa maksimal, data di-bake di build-time
-- **Supabase** — database serverless, RLS untuk keamanan
+- **Supabase** — database serverless, multi-tenant siap
 - **Cloudflare Pages Functions** — API edge tanpa server
 
 ## Current Status
 
-**V3 — Live.** Supabase terintegrasi, admin CRUD berfungsi, deployed ke Cloudflare Pages.
+**V3 — Live.** Data awal 32 SD Depok. Scope diperluas ke multi-jenjang & multi-kota.
