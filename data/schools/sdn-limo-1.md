@@ -1,0 +1,15 @@
+---
+name: "SDN Limo 1 Depok"
+slug: sdn-limo-1-depok
+type: Negeri
+kurikulum: Nasional
+fees: 0
+location: Limo
+akreditasi: A
+facilities: [perpustakaan, lapangan, kantin, laboratorium, aula]
+program: Agama Umum
+fullDay: false
+website: ""
+dataNote: "Sekolah negeri gratis"
+---
+SDN Limo 1 Depok merupakan sekolah dasar negeri yang melayani masyarakat Kecamatan Limo dengan baik.
