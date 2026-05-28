@@ -8,3 +8,4 @@ out/
 firecrawl/
 .firecrawl/
 supabase/.temp/
+.wrangler/
