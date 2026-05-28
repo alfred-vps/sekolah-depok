@@ -10,9 +10,9 @@ FUNCTIONS_DIR="$FRONTEND_DIR/functions"
 PROJECT="riset-sekolah"
 
 # Load secrets from .env if not already set
-if [ -f "$HOME/.hermes/.env" ]; then
+if [ -f "$FRONTEND_DIR/.env.local" ]; then
   set -a
-  source "$HOME/.hermes/.env"
+  source "$FRONTEND_DIR/.env.local"
   set +a
 fi
 
